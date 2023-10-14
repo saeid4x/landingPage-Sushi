@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/public/assets/sushi-9.png">
+    <title>Sushiman</title>
+    <style>
+      @font-face {
+      font-family: 'iranSans';
+        src: url('./public/fonts/IRANSans_Medium/IRANSans_Medium.ttf') format('ttf');
+}
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+
+      <nav class="header__nav">
+
+        <div class="header__logo">
+          <h4 data-aos="fade-down"> سوشی من !  </h4>
+          <div class="header__logo-overlay">            
+          </div>
+        </div>
+
+        <ul class="header__menu" data-aos="fade-down">
+
+
+          <li>
+            <a href="#menu">منو</a>
+          </li>
+
+          <li>
+            <a href="#food">غذا</a>
+          </li>
+
+          <li>
+            <a href="#services">خدمات</a>
+          </li>
+
+          <li>
+            <a href="#about-us">درباره ما</a>
+          </li>
+
+          <li>
+             <img src="/public/assets/search.svg" alt="search">
+          </li>
+
+
+        </ul>
+
+        <ul class="header__menu-mobile" data-aos="fade-down">
+          <li>
+            <img src="/public/assets/menu.svg" alt="menu">
+          </li>
+        </ul>
+
+      </nav>
+    </header>
+
+    <section class="hero">
+
+      <div class="hero-image">
+        <img src="/public/assets/sushi1_90deg.png" alt="sushi" data-aos="fade-up">
+        <h2 data-aos="fade-up">
+          日  <br>
+          本  <br>
+          食   
+        </h2>
+
+        <div class="hero-image__overlay">
+
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-content-info" data-aos="fade-left">
+          <h1>طعم غذاهای ژاپنی را امتحان کنید</h1>
+          <p>غذاهای گران‌قیمت دریایی نه تنها طعم خوبی دارند، بلکه به شما احساس خوبی نیز می‌دهند</p>
+
+          <div class="hero-content__buttons">
+            
+            <button class="hero-content__order-button">
+              اکنون سفارش دهید
+            </button>
+
+            <button class="hero-content__play-button">
+             چطور سفارش دهیم
+              <img src="/public/assets/play-circle.svg" alt="play" />
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-content__testimonial" data-aos="fade-up">
+          <div class="hero-content__customer flex-center">
+            <h4>24 <span>k+</span></h4>
+            <p> رضایت مشتریان   </p>
+          </div>
+
+          <div class="hero-content__review">
+            <img src="public/assets/user.png" alt="user" />
+            <p>“این بهترین رستوران غذای ژاپنی است که تاکنون  در عمرم دیده ام.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us" id="about-us">
+      <div class="about-us__image">
+        <div class="about-us__image-sushi3">
+          <img src="assets/sushi-3.png" alt="sushi" data-aos="fade-right" />
+        </div>
+
+        <!-- <button class="about-us__button">
+          جزئیات بیشتر 
+
+          <img src="assets/arrow-up-right.svg" alt="learn more" />
+        </button> -->
+
+        <div class="about-us__image-sushi2">
+          <img src="assets/sushi-2.png" alt="sushi"  data-aos="fade-right" />
+        </div>
+      </div>
+
+      <div class="about-us__content"  data-aos="fade-left">
+        <p class="sushi__subtitle">درباره ما / 私たちに関しては</p>
+        <h3 class="sushi__title">ماموریت ما این است که طعم واقعی ژاپنی را برای شما به ارمغان بیاوریم.</h3>
+        <p class="sushi__description">خوردن منظم غذاهای مختلف دریایی به دلیل ویتامین‌ها و مواد معدنی مهمی که این غذاها دارند، از چندین جنبه برای سلامتی مفید است.
+        </p>
+      </div>
+    </section>
+
+    <section class="popular-foods" id="menu">
+      <h2 class="popular-foods__title" data-aos="flip-up">
+       غذاهای محبوب / 人気
+      </h2>
+
+      <div class="popular-foods__filters sushi__hide-scrollbar" data-aos="fade-up">
+        <button class="popular-foods__filter-btn active">
+          همه
+        </button>
+
+        <button class="popular-foods__filter-btn">
+          <img src="/public/assets/sushi-9.png" alt="sushi 9" />
+          سوشی 
+        </button>
+
+        <button class="popular-foods__filter-btn">
+          <img src="/public/assets/sushi-8.png" alt="sushi 8" />
+          رامن
+        </button>
+
+        <button class="popular-foods__filter-btn">
+          <img src="/public/assets/sushi-7.png" alt="sushi 7" />
+          اودون
+        </button>
+
+        <button class="popular-foods__filter-btn">
+          <img src="/public/assets/sushi-6.png" alt="sushi 6" />
+          دنگو
+        </button>
+
+        <button class="popular-foods__filter-btn  ">
+          تمام
+        </button>
+      </div>
+
+      <div class="popular-foods__catalogue"  data-aos="fade-up">
+
+
+        <article class="popular-foods__card ">
+          <img 
+             class="popular-foods__card-image" 
+             src="public/assets/sushi-12.png" alt="sushi 12" />
+
+             <h4 class="popular-foods__card-title">سوشی نیگیری</h4>
+
+             <div class="popular-foods__card-details flex-between">
+               <div class="popular__card-rating">
+                 <img src="public/assets/star.svg" alt="star">
+                 <p>4.9</p>
+               </div>
+
+               <p class="popular-foods__card-price">$21.00</p>
+             </div>
+        </article>
+
+        <article class="popular-foods__card active-card">
+          <img 
+             class="popular-foods__card-image" 
+             src="public/assets/sushi-11.png" alt="sushi 11" />
+
+             <h4 class="popular-foods__card-title">سوشی ساشیمی </h4>
+
+             <div class="popular-foods__card-details flex-between">
+               <div class="popular__card-rating">
+                 <img src="public/assets/star.svg" alt="star">
+                 <p>5.0</p>
+               </div>
+
+               <p class="popular-foods__card-price">$19.00</p>
+             </div>
+        </article>
+
+        <article class="popular-foods__card">
+          <img 
+             class="popular-foods__card-image" 
+             src="public/assets/sushi-10.png" alt="sushi 10" />
+
+             <h4 class="popular-foods__card-title">غذای زامن</h4>
+
+             <div class="popular-foods__card-details flex-between">
+               <div class="popular__card-rating">
+                 <img src="public/assets/star.svg" alt="star">
+                 <p>4.7</p>
+               </div>
+
+               <p class="popular-foods__card-price">$13.00</p>
+             </div>
+        </article>
+
+
+
+      </div>
+
+      <button class="popular-foods__button">
+        مشاهده غذاها
+        <img src="public/assets/arrow-right.svg" alt="arrow right">
+      </button>
+
+
+    </section>
+
+    <section class="trending" id="food">
+
+      <section class="trending-sushi">
+        <div class="trending__content" data-aos="fade-right">
+          <p class="sushi__subtitle">ترند روز دنیا / トレンド</p>
+          <h3 class="sushi__title">سوشی ژاپنی </h3>
+          <p class="sushi__description">طعم خوشمزه ترین سوشی را در اینجا امتحان کنید</p>
+  
+          <ul class="trending__list flex-between">
+  
+            <li>
+               <div class="trending__icon flex-center ">
+                  <img src="/public/assets/check.svg" alt="check ">
+               </div>
+  
+               <p>تهیه سوشی </p>
+            </li>
+  
+            <li>
+               <div class="trending__icon flex-center ">
+                  <img src="/public/assets/check.svg" alt="check ">
+               </div>
+  
+               <p> اوراماکی</p>
+            </li>
+  
+            <li>
+               <div class="trending__icon flex-center ">
+                  <img src="/public/assets/check.svg" alt="check ">
+               </div>
+  
+               <p>تماکی </p>
+            </li>
+  
+            <li>
+               <div class="trending__icon flex-center ">
+                  <img src="/public/assets/check.svg" alt="check ">
+               </div>
+  
+               <p>سوشی کاتسو</p>
+            </li>
+  
+            <li>
+               <div class="trending__icon flex-center ">
+                  <img src="/public/assets/check.svg" alt="check ">
+               </div>
+  
+               <p>سوشی لذیذ</p>
+            </li>
+  
+            <li>
+               <div class="trending__icon flex-center ">
+                  <img src="/public/assets/check.svg" alt="check ">
+               </div>
+  
+               <p>سوشی آناگو </p>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="trending__image flex-center">
+          <img
+              src="public/assets/sushi-5.png"
+               alt="sushi 5" 
+               data-aos="fade-left"
+               />
+  
+               <div class="trending__arrow trending__arrow-left">
+                  <img src="public/assets/arrow-vertical.svg" alt="arrow vertical">
+               </div>
+  
+               <div class="trending__arrow trending__arrow-bottom">
+                  <img src="public/assets/arrow-horizontal.svg" alt="arrow horizontal">
+               </div>
+        </div>
+
+      </section>
+
+      <div class="trending__discover" data-aos="zoom-in">
+        <p>جستجو</p>
+      </div>
+
+      <section class="trending-drinks">
+
+        <div class="trending__image flex-center">
+          <img
+              src="public/assets/sushi-4.png"
+               alt="sushi 4" 
+               data-aos="fade-right"
+               />
+  
+               <div class="trending__arrow trending__arrow-top">
+                  <img src="public/assets/arrow-horizontal.svg" alt="arrow horizontal">
+               </div>
+  
+               <div class="trending__arrow trending__arrow-right">
+                  <img src="public/assets/arrow-vertical.svg" alt="arrow vertical">
+               </div>
+        </div>
+
+        <div class="trending__content" data-aos="fade-left">
+          <p class="sushi__subtitle">ترند روز دنیا / トレンド</p>
+          <h3 class="sushi__title">نوشیدنی های ژاپنی</h3>
+          <p class="sushi__description">خوشمزه ترین نوشیدنی های ژاپنی را در اینجا می توانید امتحان کنید</p>
+  
+          <ul class="trending__list flex-between">
+  
+            <li>
+               <div class="trending__icon flex-center ">
+                  <img src="/public/assets/check.svg" alt="check ">
+               </div>
+  
+               <p>رامونه</p>
+            </li>
+  
+            <li>
+               <div class="trending__icon flex-center ">
+                  <img src="/public/assets/check.svg" alt="check ">
+               </div>
+  
+               <p> چای ماچا</p>
+            </li>
+  
+            <li>
+               <div class="trending__icon flex-center ">
+                  <img src="/public/assets/check.svg" alt="check ">
+               </div>
+  
+               <p>موگی‌چا</p>
+            </li>
+  
+            <li>
+               <div class="trending__icon flex-center ">
+                  <img src="/public/assets/check.svg" alt="check ">
+               </div>
+  
+               <p>شوچو</p>
+            </li>
+  
+            <li>
+               <div class="trending__icon flex-center ">
+                  <img src="/public/assets/check.svg" alt="check ">
+               </div>
+  
+               <p>ساکورایو</p>
+            </li>
+  
+            <li>
+               <div class="trending__icon flex-center ">
+                  <img src="/public/assets/check.svg" alt="check ">
+               </div>
+  
+               <p>شیر سویا</p>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
+      
+
+    </section>
+
+    <section class="subscription flex-center" id="services">
+      <h2 data-aos="flip-down">
+        آفرهای ویژه را مستقیما <br /> در اینباکس تان دریافت کنید
+      </h2>
+
+      <p data-aos="fade-up"> در خبرنامه سوشی ثبت نام کنید</p>
+
+      <div class="subscription__form" data-aos="fade-up">
+        <input type="text" placeholder="Enter your email address" />
+        <button>شروع کنید</button>
+
+      </div>
+    </section>
+
+    <section class="footer flex-between">
+
+      <h3 class="footer__logo">
+        <span>Sushi</span>man
+      </h3>
+
+      <ul class="fooetr__nav">
+        <li><a href="#menu">منو</a></li>
+        <li><a href="#food">غذاها</a></li>
+        <li><a href="#services">خدمات</a></li>
+        <li><a href="#about-us">درباره ما</a></li>
+      </ul>
+
+      <ul class="footer__social">
+        
+        <li class="flex-center">
+          <img src="public/assets/facebook.svg" alt="facebook">
+        </li>
+        
+        <li class="flex-center">
+          <img src="public/assets/instagram.svg" alt="facebook">
+        </li>
+        
+        <li class="flex-center">
+          <img src="public/assets/twitter.svg" alt="facebook">
+        </li>
+        
+         
+
+      </ul>
+    </section>
+
+
+
+     
+
+
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>
